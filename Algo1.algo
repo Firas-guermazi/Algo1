@@ -1,0 +1,22 @@
+ALGORITHM algorithms signe
+VAR
+    c:char='';
+    nb-char: integer:=0;
+    nb-voy : integer:=0;
+    nb-word : integer:=0;
+
+BEGIN  
+while(c<>'.')Do
+read(c) ;
+nb-char :=nb-char+1
+End_If
+if(c='')Then
+nb-word:=nb-word+1; 
+End_If
+if(c='a'OR c='u'OR c='y'OR c='i'OR c='y')Then
+nb-voy=nb-voy+1;  
+End_If
+write("the lenght of the sentence is",nb-char);
+write("the numbre of wordsin the  sentence is",nb-word);
+write("the number of vowels in the sentence",nb-voy);
+END
